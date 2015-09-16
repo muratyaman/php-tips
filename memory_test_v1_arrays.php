@@ -10,8 +10,8 @@ mt_srand();
 for($i = 1; $i <= $L; $i++) {
     $row = [
         'a' => str_shuffle($S),//string
-        'b' => rand(0, $L) / rand(1, $L),//float
-        'c' => rand(-1000, 1000),//int
+        'b' => mt_rand(0, $L) / mt_rand(1, $L),//float
+        'c' => mt_rand(-1000, 1000),//int
     ];
     $arr[] = $row;
 }
